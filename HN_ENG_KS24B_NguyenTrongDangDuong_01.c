@@ -59,15 +59,19 @@ int main()
     }
     break;
     case 3:
-    int min=arr[0];
+    int min=arr[0],min1=arr[1];
     for(int i=1;i<n-1;i++)
     {
         if(min>arr[i])
         {
             min=arr[i];
+            if(min<min1)
+            {
+                min1=min;
+            }
         }
     }
-    printf("So nho thu 2 la: %d",min);
+    printf("So nho thu 2 la: %d",min1);
     break;
     case 4:
     int vitri,them;
